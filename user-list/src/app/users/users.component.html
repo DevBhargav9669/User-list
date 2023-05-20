@@ -1,0 +1,18 @@
+<div class="button-container">
+    <button class="sort-button" (click)="sortByName()">Sort by Name</button>
+  </div>
+  <table class="user-table">
+    <thead>
+      <tr>
+        <th class="column-separator">Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users" class="user-row">
+        <td class="column-separator">{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
